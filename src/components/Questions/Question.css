@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.questionSec{
+    margin: 30px 0 30px 0;
+}
+.questionSec h1{
+    text-align: center;
+    margin:0;
+}
+.answerDiv{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    width: 75%;
+}
+.answerChildDiv{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width:576px){
+    .answerDiv{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    
+}
