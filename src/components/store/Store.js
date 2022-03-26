@@ -38,13 +38,17 @@ const Store = () => {
             const randomValue = Math.round(Math.random() * (cart.length - 1));
             selectedItem[0] = cart[randomValue];
             setRandom(selectedItem);
+            setOpenModal(true);
         }
         else {
             alert("You have not chosen anything yet! Please choose four items of your choice.")
         }
-        setOpenModal(true);
     }
 
+    const handleResetBtn = () => {
+        const emptyCart = [];
+        setCart(emptyCart);
+    }
     return (
         <div className='mainBody'>
             <div className='storeBody'>
@@ -54,7 +58,7 @@ const Store = () => {
                     }
                 </div>
                 <div className='cartBody'>
-                    <Cart handleRandomizer={handleRandomizer} cart={cart}></Cart>
+                    <Cart handleRandomizer={handleRandomizer} handleResetBtn={handleResetBtn} cart={cart}></Cart>
                 </div>
             </div>
             {openModal && random.map(item => <Modal key={item.id} item={item} setOpenModal={setOpenModal}></Modal>)}

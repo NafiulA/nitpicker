@@ -4,7 +4,7 @@ import CartElement from '../cartChoices/CartElement';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRandom, faRefresh } from '@fortawesome/free-solid-svg-icons'
 
-const Cart = ({ cart, handleRandomizer }) => {
+const Cart = ({ cart, handleRandomizer, handleResetBtn }) => {
     return (
         <div className='cart'>
             <h3>Your Choices</h3>
@@ -17,7 +17,7 @@ const Cart = ({ cart, handleRandomizer }) => {
                 <p>Choose for me</p>
                 <FontAwesomeIcon icon={faRandom}></FontAwesomeIcon>
             </button>
-            <button className='resetBtn'>
+            <button onClick={handleResetBtn} className='resetBtn'>
                 <p>Reset</p>
                 <FontAwesomeIcon icon={faRefresh}></FontAwesomeIcon>
             </button>
