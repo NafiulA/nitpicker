@@ -4,7 +4,6 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 import './Modal.css'
 
 const Modal = ({ item, setOpenModal }) => {
-    console.log(item);
     return (
         <div>
             <div className='modalContainer'>
