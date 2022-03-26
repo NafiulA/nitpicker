@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "Realme C31",
+    "price": 150,
+    "img": "https://fdn2.gsmarena.com/vv/pics/realme/realme-c31-5.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "2",
+    "name": "Samsung Galaxy A23",
+    "price": 250,
+    "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a23-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "3",
+    "name": "Oppo Find X5 Lite",
+    "price": 650,
+    "img": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-find-x5-lite-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "4",
+    "name": "Nokia G11",
+    "price": 160,
+    "img": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g11-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "5",
+    "name": "Xiaomi Poco X4 Pro",
+    "price": 340,
+    "img": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-x4-pro-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "6",
+    "name": "Google Pixel 6 Pro",
+    "price": 720,
+    "img": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-pro-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "7",
+    "name": "Apple iPhone 13 Pro",
+    "price": 1099,
+    "img": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-01.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "8",
+    "name": "Sony Xperia Pro-I",
+    "price": 1230,
+    "img": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-pro-i-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "9",
+    "name": "Honor Magic4 Ultimate",
+    "price": 1150,
+    "img": "https://fdn2.gsmarena.com/vv/pics/honor/honor-magic4-ultimate-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "10",
+    "name": "OnePlus 10 Pro",
+    "price": 650,
+    "img": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-10-pro-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "11",
+    "name": "Asus ROG Phone 5s Pro",
+    "price": 1580,
+    "img": "https://fdn2.gsmarena.com/vv/pics/asus/asus-rog-phone-5s-pro-00.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "12",
+    "name": "Huawei P50E",
+    "price": 620,
+    "img": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p50e-1.jpg",
+    "quantity": 0
+  }
+]
