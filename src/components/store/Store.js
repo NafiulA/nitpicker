@@ -13,8 +13,20 @@ const Store = () => {
     }, [])
 
     const handleCart = (item) => {
-        const newCart = [...cart, item];
-        setCart(newCart);
+        const length = cart.length;
+        const exist = cart.find(element => item.id === element.id);
+        if (length < 4) {
+            if (exist) {
+                alert("You have already Chosen this item");
+            }
+            else {
+                const newCart = [...cart, item];
+                setCart(newCart);
+            }
+        }
+        else {
+            alert("You can only choose 4 items");
+        }
     }
 
     return (
