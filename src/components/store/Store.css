@@ -31,6 +31,18 @@
     .cartBody{
         border-radius: 0;
         min-height: auto;
+    }   
+}
+
+@media only screen and (min-width:577px) and (max-width:991px) {
+    .storeBody{
+        grid-template-columns: repeat(1,1fr);
     }
-    
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cartBody{
+        border-radius: 0;
+        min-height: auto;
+    } 
 }

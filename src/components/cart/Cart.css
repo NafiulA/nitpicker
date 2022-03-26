@@ -11,6 +11,10 @@
     border: none;
     border-radius: 8px;
 }
+.randomizerBtn:hover,.resetBtn:hover{
+    background-color: #272531;
+    cursor: pointer;
+}
 .randomizerBtn>p,.resetBtn>p{
     margin-right: 10px;
 }
