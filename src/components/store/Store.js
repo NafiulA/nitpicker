@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../cart/Cart';
+import Modal from '../Modal/Modal';
 import Products from '../products/Products';
 import './Store.css'
 const Store = () => {
 
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [random, setRandom] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
     useEffect(() => {
         fetch("products.json")
             .then(res => res.json())
@@ -29,16 +32,32 @@ const Store = () => {
         }
     }
 
+    const handleRandomizer = () => {
+        let selectedItem = [];
+        if (cart.length > 0) {
+            const randomValue = Math.round(Math.random() * (cart.length - 1));
+            selectedItem[0] = cart[randomValue];
+            setRandom(selectedItem);
+        }
+        else {
+            alert("You have not chosen anything yet! Please choose four items of your choice.")
+        }
+        setOpenModal(true);
+    }
+
     return (
         <div className='mainBody'>
-            <div className='products'>
-                {
-                    products.map(product => <Products key={product.id} event={handleCart} product={product}></Products>)
-                }
+            <div className='storeBody'>
+                <div className='products'>
+                    {
+                        products.map(product => <Products key={product.id} event={handleCart} product={product}></Products>)
+                    }
+                </div>
+                <div className='cartBody'>
+                    <Cart handleRandomizer={handleRandomizer} cart={cart}></Cart>
+                </div>
             </div>
-            <div className='cartBody'>
-                <Cart cart={cart}></Cart>
-            </div>
+            {openModal && random.map(item => <Modal key={item.id} item={item} setOpenModal={setOpenModal}></Modal>)}
         </div>
     );
 };

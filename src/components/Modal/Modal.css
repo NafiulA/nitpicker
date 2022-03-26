@@ -1,0 +1,34 @@
+.modalContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+.modalBody{
+    background-color: #F7CCAC;
+    padding: 30px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.closeModalBtn{
+    margin-left: auto;
+    border: none;
+    background-color: #3A3845;
+    color: #F7CCAC;
+    padding: 5px 10px;
+}
+
+.modalBody img{
+    width: 250px;
+}
+.productName{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
