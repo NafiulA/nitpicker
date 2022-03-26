@@ -2,9 +2,10 @@
 
 .product{
     width: 310px;
-    height: 500px;
+    height: 510px;
     border: 1px solid #C69B7B;
     border-radius: 12px;
+    position: relative;
 }
 
 .product img{
@@ -13,7 +14,7 @@
     padding:5px 0 5px 5px;
 }
 
-.product p{
+.product>p{
     padding-left: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -21,4 +22,25 @@
 .productName{
     font-size: 24px;
     font-weight: 600;
+}
+
+.cartBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #C69B7B;
+    color: #3A3845;
+}
+.cartBtn:hover{
+    background-color: #F7CCAC;
+}
+.cartBtn>p{
+    margin: 10px 0;
+    margin-right: 10px;
 }

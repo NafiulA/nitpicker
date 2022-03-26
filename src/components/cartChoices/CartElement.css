@@ -1,0 +1,8 @@
+.elementBody{
+    display: flex;
+    margin: 0 0 10px 0;
+}
+.elementImg{
+    width: 50px;
+    margin-right: 10px;
+}

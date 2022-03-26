@@ -12,3 +12,11 @@
     justify-items: center;
     margin-top: 50px;
 }
+
+.cartBody{
+    background-color: #826F66;
+    margin-top: 50px;
+    border-radius: 10px 0 0 10px;
+    height: fit-content;
+    min-height:400px ;
+}
