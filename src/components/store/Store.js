@@ -46,8 +46,14 @@ const Store = () => {
     }
 
     const handleResetBtn = () => {
-        const emptyCart = [];
-        setCart(emptyCart);
+        if (cart.length > 0) {
+            const emptyCart = [];
+            setCart(emptyCart);
+        }
+        else {
+            alert('You have no choice to reset!');
+        }
+
     }
     return (
         <div className='mainBody'>
